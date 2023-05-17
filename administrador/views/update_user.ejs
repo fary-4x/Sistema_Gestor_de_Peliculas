@@ -1,0 +1,70 @@
+<!-- include header -->
+<%- include('include/_header') %>
+    <!-- /include header -->
+
+    <!--Main Site-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/index"><i class="fas fa-angle-double-left" aria-hidden="true"></i>TRAILERS</a>
+                </div>
+            </div>
+
+            <div class="form-title text-center">
+                <h2 class="text-dark">MODIFICAR TRAILERS</h2>
+                <sapn class="text-light">Utilice este formulario para Modificar un Trailer</sapn>
+            </div>
+
+            <!--form handling-->
+            <form method="POST" id="update_user">
+                <div class="new_user">
+                    <div class="form-group">
+                        <label for="titulo" class="text-light">Título</label>
+                        <input type="hidden" name="id" value="<%= user._id %>">
+                        <input type="text" name="titulo" value="<%= user.titulo %>"
+                            placeholder="Ingrese el Título del Trailer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ano" class="text-light">Año</label>
+                        <input type="number" name="ano" value="<%= user.ano %>"
+                            placeholder="Introduzca el Año del Trailer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="director" class="text-light">Director/es</label>
+                        <input type="text" name="director" value="<%= user.director %>"
+                            placeholder="Nombre del Director" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="actores" class="text-light">Actores</label>
+                        <input type="text" name="actores" value="<%= user.actores %>"
+                            placeholder="Nombre/s de los Actor/es" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resena" class="text-light">Reseña</label>
+                        <input type="text" name="resena" value="<%= user.resena %>" placeholder="Escriba una Reseña"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="portada" class="text-light">Portada</label>
+                        <input type="text" name="portada" value="<%= user.portada %>" placeholder="Link de la Imagen"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="link" class="text-light">Link Trailer</label>
+                        <input type="text" name="link" value="<%= user.link %>" placeholder="Link del Trailer" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">MODIFICAR</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <!--/Main Site-->
+
+    <!-- include footer -->
+    <%- include('include/_footer') %>
+        <!-- /include footer -->

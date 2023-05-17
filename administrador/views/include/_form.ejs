@@ -1,0 +1,38 @@
+ <!--form handling-->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="titulo" class="text-light">Título</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="titulo" value="" placeholder="Ingrese el Título del Trailer" required>
+        </div>
+        <div class="form-group">
+            <label for="ano" class="text-light">Año</label>
+            <input type="number" name="ano" value="" placeholder="Introduzca el Año del Trailer" required>
+        </div>
+        <div class="form-group">
+            <label for="director" class="text-light">Director</label>
+            <input type="text" name="director" value="" placeholder="Nombre del Director" required>
+        </div>
+        <div class="form-group">
+            <label for="actores" class="text-light">Actores</label>
+            <input type="text" name="actores" value="" placeholder="Nombre/s de los Actor/es" required>
+        </div>
+        <div class="form-group">
+            <label for="resena" class="text-light">Reseña</label>
+            <input type="text" name="resena" value="" placeholder="Escriba una Reseña" required>
+        </div>
+        <div class="form-group">
+            <label for="portada" class="text-light">Portada</label>
+            <input type="text" name="portada" value="" placeholder="Link de la Imagen" required>
+        </div>
+        <div class="form-group">
+            <label for="link" class="text-light">Link Trailer</label>
+            <input type="text" name="link" value="" placeholder="Link del Trailer" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">GUARDAR</button>
+        </div>
+    </div>
+</form>

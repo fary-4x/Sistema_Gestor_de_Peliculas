@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIEPLUS</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <!--Header-->
+        <header id="header">
+            <nav>
+                <div class="container">
+                    <div class="text-center">
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+<main id="site-main">
+    <div class="filter">
+        <a href="/"><i class="fas fa-angle-double-left" aria-hidden="true"></i>HOME</a>
+    </div>
+        <h2>ADMINISTRADOR</h2>
+        <div class="box">
+            <class= class="fondo">
+    
+            <h2 class="title">LOGIN</h2>
+    
+            <!--REGISTRAR USUARIO-->
+            <div class="inputBox">
+                <i class="fa-solid fa-user"></i>
+				<input class = "inp" id="usuario" type="text" required="required">
+                <span>Usuario</span>
+				<i></i>
+			</div>
+            
+    
+            
+    
+    
+            <!--REGISTRAR CONTRASEÑA-->
+
+            <div class="inputBox">
+                <i class="fa-solid fa-user"></i>
+				<input class = "inp" id="clave" type="password" required="required">
+                <span>Contraseña</span>
+				<i></i>
+			</div>
+            
+    
+            <div style="text-align: center;">
+
+                <input type="submit" class="btn text-dark update" onclick="login()" value="Iniciar">
+            
+            </div>
+        </div>
+        
+         </div>
+    </class>
+</main>
+<!--/Main Site-->
+
+<!-- include footer -->
+    <%- include('include/_footer') %>
+<!-- /include footer -->
